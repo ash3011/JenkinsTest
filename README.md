@@ -22,3 +22,4 @@
 ### Port forward to a desired port
     kubectl port-forward service/{{ include "appdeployment.name" . }}-service 3200:3200 --namespace=your-namespace
     
+    
