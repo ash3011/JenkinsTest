@@ -15,6 +15,7 @@ rollingUpdate:
   # maximum pods which will be unavailable
   maxUnavailable: 0
 
+# the docker image for applications
 image:
   # webapp docker image
   repository: csye7125project/webapp:v1

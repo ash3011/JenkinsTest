@@ -21,3 +21,6 @@
 
 ### Port forward to a desired port
     kubectl port-forward service/{{ include "appdeployment.name" . }}-service 3200:3200 --namespace=your-namespace
+
+### Added Ansible Jenkins integration
+    Create a PR and push code to trigger a new release on github.
