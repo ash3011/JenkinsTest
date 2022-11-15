@@ -1,6 +1,6 @@
 {
   "branches": "main",
-  "repositoryUrl": "https://github.com/cyse7125-fall2022-group02/helm-chart.git",
+  "repositoryUrl": "https://github.com/ash3011/JenkinsTest.git",
   "debug": "false",
   "plugins": [
     "@semantic-release/commit-analyzer",
