@@ -4,7 +4,7 @@ pipeline {
   tools {nodejs "node"}
   
   environment {
-   GITHUB_TOKEN = credentials('csye7125')
+   GITHUB_TOKEN = credentials('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')
   }
 
   stages {
