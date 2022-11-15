@@ -3,9 +3,9 @@ pipeline {
   
   tools {nodejs "node"}
   
-  environment {
-    GITHUB_TOKEN = credentials('gitrepo')
-  }
+  //environment {
+  //  GITHUB_TOKEN = credentials('gitrepo')
+  //}
 
   stages {
     stage('Checkout code') {
@@ -23,7 +23,8 @@ pipeline {
     // }
     stage('Create Release') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'gitrepo', usernameVariable : 'USERNAME', passwordVariable: 'GITTOKEN')]) {
+        //withCredentials([usernamePassword(credentialsId: 'gitrepo', usernameVariable : 'USERNAME', passwordVariable: 'GITTOKEN')])
+        {
           sh '''
           npm install ci
           ls -al
