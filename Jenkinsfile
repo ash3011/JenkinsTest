@@ -24,11 +24,11 @@ pipeline {
     stage('Create Release') {
       steps {
         //withCredentials([usernamePassword(credentialsId: 'gitrepo', usernameVariable : 'USERNAME', passwordVariable: 'GITTOKEN')])
-        
+        //GITHUB_TOKEN=$GITTOKEN npx semantic-release
           sh '''
           npm install ci
           ls -al
-          GITHUB_TOKEN=$GITTOKEN npx semantic-release
+          
           '''
         
       }
