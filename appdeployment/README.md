@@ -1,4 +1,4 @@
-# Chart for webapp deployment on a Kubernetes Cluster
+# Chart for webapp deployment
 
 ### Run lint command to check for syntax errors
     helm lint .
@@ -14,7 +14,7 @@
 
 ### Update the chart if any changes are done, creates a new version and renders chart in kubernetes Cluster
     helm upgrade --install appdeployment --create-namespace --namespace assignment-grp2 ./ -f values-override.yaml \
-    --set dockerConfigJson=add-docker-config-secret-variable
+    --set dockerConfigJson=add-docker-config-secret-variable 
 
 ### Delete helm chart
     helm uninstall appdeployment -n your-namespace
