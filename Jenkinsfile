@@ -4,7 +4,7 @@ pipeline {
   tools {nodejs "node"}
   
   environment {
-   GITHUB_TOKEN = credentials('Secret text')
+   GITHUB_TOKEN = credentials('ash3011')
   }
 
   stages {
